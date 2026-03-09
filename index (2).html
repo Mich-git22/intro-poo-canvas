@@ -4,38 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assests/js/img/favicoon.png">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Intro Cancas 2D</title>
+        crossorigin="anonymous">
+
+    <title>Intro Canvas 2D</title>
 </head>
 
-<body>
+<body style="background: linear-gradient(135deg,#eef2ff,#e0f7ff); min-height:100vh; display:flex; flex-direction:column;">
 
-    <main class="container flex-column mt-3 shadow rounded-3 p-3">
-        <div class="d-flex justify-content-center flex-row mb-3">
-            <h1>Objetos 2D mediante OOP</h1>
+    <!-- HEADER -->
+    <header class="text-center text-white py-4 shadow"
+        style="background: linear-gradient(90deg,#667eea,#764ba2);">
+        <h1 class="fw-bold">Graficación por Computadora</h1>
+        <p class="mb-0">Canvas 2D con Programación Orientada a Objetos</p>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL MÁS GRANDE -->
+    <main class="container mt-5 mb-5 shadow rounded-3 p-5 bg-white"
+        style="max-width:1400px;">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Objetos 2D mediante OOP</h2>
         </div>
-        <div class="d-flex flex-row shadow-sm mb-1 p-3 justify-content-around">
-            <div class="d-flex justify-content-center flex-column mb-3">
-                <h5 class="d-flex justify-content-center">Objeto 2D</h5>
-                <canvas class="border shadow" id="canvasOOP"></canvas>
+
+        <div class="row justify-content-center text-center g-5">
+
+            <div class="col-lg-4">
+                <h5 class="mb-3">Objeto 2D</h5>
+                <canvas class="border shadow w-100" id="canvasOOP"></canvas>
             </div>
-            <div class="d-flex justify-content-center flex-column mb-3">
-                <h5 class="d-flex justify-content-center">Objeto con Random</h5>
-                <canvas class="border shadow" id="canvasRandom"></canvas>
+
+            <div class="col-lg-4">
+                <h5 class="mb-3">Objeto con Random</h5>
+                <canvas class="border shadow w-100" id="canvasRandom"></canvas>
             </div>
-            <div class="d-flex justify-content-center flex-column mb-3">
-                <h5 class="d-flex justify-content-center">Múltiples objetos</h5>
-                <canvas class="border shadow" id="canvasMultiple"></canvas>
+
+            <div class="col-lg-4">
+                <h5 class="mb-3">Múltiples objetos</h5>
+                <canvas class="border shadow w-100" id="canvasMultiple"></canvas>
             </div>
+
         </div>
 
     </main>
 
+    <!-- FOOTER -->
+    <footer class="text-center text-white py-3 mt-auto"
+        style="background: linear-gradient(90deg,#141e30,#243b55);">
+        <p class="mb-0">© 2026 Michelle Pacheco | Graficación por Computadora</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
     <script src="./assests/js/main.js"></script>
+
 </body>
 
 </html>
